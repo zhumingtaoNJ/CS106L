@@ -1,16 +1,18 @@
 # Type
 
-C++ is a ```static type```language. Every item should be check what type it is before complier go.
+C++ is a ```static type```language.
+Every item should be check what type it is before complier go.
 
-Otherwise, Runtime error happens! 
+Otherwise, Runtime error happens!-
 
-# Struct
+## Struct
 
-Struct is used to define user's type.
+struct is used to define user's type.
 
-```c
+```c++
 struct {
   int number;
+
   std::tring name;
 }
 ```
@@ -19,9 +21,10 @@ struct {
 
 ' using ' in C++ is like ' typedef ' in C;
 
-```c
+```c++
 using Studect = std::pair<int number, std::string name>
 ```
+
 ``` c
 //Solution for ax**2+bx+c=0
 using QuadraticSolution = std::pair<bool, std::pair<double, double>>;
@@ -34,9 +37,9 @@ int main() {
 }
 ```
 
-## auto 
+## auto
 
-auto can be used to infer some nomal type, or even a list，typically，it's uesd in ```loops```
+auto can be used to infer some normal type, or even a list，typically，it's used in ```loops```
 
 But it can't be used for user-defined type
 
@@ -46,7 +49,3 @@ for (auto v : vex) {
   std::cout << v << std::endl;
 }
 ```
-
-
-
-
