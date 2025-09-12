@@ -1,6 +1,14 @@
 # Type
 
-C++ is a ```static type```language.
+<!--toc:start-->
+
+- [Type](#type)
+  - [Struct](#struct)
+  - [Type aliases with using](#type-aliases-with-using)
+  - [auto](#auto)
+  <!--toc:end-->
+
+C++ is a `static type`language.
 Every item should be check what type it is before complier go.
 
 Otherwise, Runtime error happens!-
@@ -25,7 +33,7 @@ struct {
 using Studect = std::pair<int number, std::string name>
 ```
 
-``` c
+```c
 //Solution for ax**2+bx+c=0
 using QuadraticSolution = std::pair<bool, std::pair<double, double>>;
 
@@ -39,7 +47,7 @@ int main() {
 
 ## auto
 
-auto can be used to infer some normal type, or even a list，typically，it's used in ```loops```
+auto can be used to infer some normal type, or even a list，typically，it's used in `loops`
 
 But it can't be used for user-defined type
 

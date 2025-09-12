@@ -1,6 +1,5 @@
 # CS106L
 
-
 - README.md
 - Type-and-Structure.md
 
