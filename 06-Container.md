@@ -9,18 +9,24 @@
 
 They all are template and belong to Standard Template Library.
 
+## STL
+
+Using STL can make the operations eaiser.
+
+Below we will introduce the std's operations.
+
 ## vector
 
 We use *'std::vector <T>'* to record a linear list of item T.
 
 Common use:
 
-- std::vector<T> v// create a empty vector.
-- v.push_back(element) // append element to the end of v.
-- v.empty() // check if v is empty.
+- std::vector<T> v// create a empty vector. STL: Vector<T> v;
+- v.push_back(element) // append element to the end of v. STL: v.add(e);
+- v.empty() // check if v is empty. STL: v.isEmpty();
 - v.pop_back() // remove the last item and don't return it.
-- T element = v.at(index) // read the item at index.
-- v.at(index) = e. // write the item e into index.
+- T element = v.at(index) // read the item at index. STL:T e = v.get(index);
+- v.at(index) = e. // write the item e into index. STL: v.get(i) = e;
 - v.clear()
 
 ```c++
@@ -32,6 +38,18 @@ v.push_back(6);
 The vector will automatically double the capacity when size is not enough.
 
 And it's a linear container.
+
+- Tips: use *const auto&* when possible
+
+```
+std::vector<Person> vec {...};
+
+for (const auto& elem: v) {
+ ...;
+}
+```
+
+Iteractor and *auto* sometimes may help.
 
 ### Behind the scenes
 
