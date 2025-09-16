@@ -47,7 +47,9 @@ int main() {
 
 ## auto
 
-auto can be used to infer some normal type, or even a list，typically，it's used in `loops`
+Auto can be used to infer some normal type.
+
+Or even a list，typically，it's used in `loops`
 
 But it can't be used for user-defined type
 
